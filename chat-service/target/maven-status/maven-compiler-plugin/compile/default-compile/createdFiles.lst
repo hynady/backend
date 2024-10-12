@@ -1,0 +1,10 @@
+com\example\chatservice\service\ChatService.class
+com\example\chatservice\model\Chat.class
+com\example\chatservice\producer\MessageProducer.class
+com\example\chatservice\repository\ChatRepository.class
+com\example\chatservice\ChatServiceApplication.class
+com\example\chatservice\repository\MessageRepository.class
+com\example\chatservice\controller\ChatController.class
+com\example\chatservice\config\RabbitConfig.class
+com\example\chatservice\consumer\MessageConsumer.class
+com\example\chatservice\model\Message.class

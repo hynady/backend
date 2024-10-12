@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: chat-service
+  datasource:
+    url: jdbc:mysql://mysql-chat:3306/chat_db  # Sử dụng 'mysql-chat' là tên service mysql trong Docker Compose
+    username: root
+    password: Namduy2003@))#
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 8082  # Cổng cho Chat Service
+
+# Cấu hình Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/  # Sử dụng 'eureka-server' là tên dịch vụ trong Docker Compose
+  instance:
+    preferIpAddress: true

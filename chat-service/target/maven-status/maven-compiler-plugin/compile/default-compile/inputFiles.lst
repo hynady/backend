@@ -1,0 +1,10 @@
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\ChatServiceApplication.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\config\RabbitConfig.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\consumer\MessageConsumer.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\controller\ChatController.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\model\Chat.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\model\Message.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\producer\MessageProducer.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\repository\ChatRepository.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\repository\MessageRepository.java
+C:\Users\duyvn\IdeaProjects\demo_microservice\back-end\chat-service\src\main\java\com\example\chatservice\service\ChatService.java

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://mysql-user:3306/user_db  # Sử dụng 'mysql' là tên dịch vụ trong Docker Compose
+    username: root
+    password: Namduy2003@))#
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 8081  # Cổng cho User Service
+
+# Cấu hình Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/  # Sử dụng 'eureka-server' là tên dịch vụ trong Docker Compose
+  instance:
+    preferIpAddress: true
