@@ -8,15 +8,7 @@ services:
       - MYSQL_DATABASE=user_db  # Tạo database cho chat service
     ports:
       - "3309:3306"
-
-  mysql-chat:
-    image: mysql:8.0
-    environment:
-      - MYSQL_ROOT_PASSWORD=Namduy2003@))#
-      - MYSQL_DATABASE=chat_db  # Tạo database cho chat service
-    ports:
-      - "3308:3306"
-
+      
   rabbitmq:
     image: rabbitmq:3-management
     ports:
@@ -48,14 +40,4 @@ services:
     environment:
       - SPRING_APPLICATION_NAME=user-service
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
-
-  chat-service:
-    build:
-      context: ./chat-service
-      dockerfile: Dockerfile
-    ports:
-      - "8082:8082"
-    environment:
-      - SPRING_APPLICATION_NAME=chat-service
-      - EUREKA_CLIENT_SERVICEURL=http://eureka-server:8761/eureka/
 
